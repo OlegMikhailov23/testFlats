@@ -1,6 +1,7 @@
 
 $tablet-widths: ("min-width: 720px");
-$desktop-widths: ("min-width: 1140px");
+$desktop-widths: ("min-width: 1200px");
+$lg-widths: ("min-width: 1400px");
 $retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
 
 //bg-features
@@ -14,6 +15,8 @@ $content-bg: #fffefd;
 $footer-bg: #046380;
 
 $alert-bg: #ff4444;
+
+$show-btn-bg: #046380;
 
 //font-features
 

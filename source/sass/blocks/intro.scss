@@ -12,3 +12,16 @@
 	text-align: center;
 	font-family: inherit;
 }
+
+@media ($desktop-widths) {
+	.intro h1 {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 48px;
+		line-height: 50px;
+		text-align: left;
+		padding-top: 70px;
+		padding-bottom: 65px;
+		padding-left: 8%;
+	}
+}
