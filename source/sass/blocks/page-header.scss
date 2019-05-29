@@ -3,7 +3,12 @@
 @import "../mixin.scss";
 
 header {
-	background-color: nav-bg;
+	background-color: $nav-bg;
+}
+
+.header__wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .main-nav {

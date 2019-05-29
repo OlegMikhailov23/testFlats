@@ -12,8 +12,11 @@
     padding-bottom: 20px;
     text-align: center;
 
-    & a {
+    & button {
         @include zero-style();
+        border: none;
+        background-color: none;
+        outline: none;
         position: relative;
         display: inline-block;
         margin-left: 13px;
@@ -21,10 +24,11 @@
         padding-bottom: 3px;
         color: $main-font-color;
         font-family: inherit;
+        cursor: pointer;
 
     }
 
-    & a::before {
+    & button::before {
         content: "";
         display: block;
         position: absolute;
@@ -37,14 +41,15 @@
         background-image: url("../img/bread-crumbs-arrow.png");
         background-position: center;
         background-repeat: no-repeat;
+        cursor: pointer;
     }
 
-    & a:nth-child(3)::before {
+    & button:nth-child(3)::before {
         transform: rotate(180deg);
     }
 }
 
-.cards__bread-crumbs__link--active {
+.cards__bread-crumbs .cards__bread-crumbs__link--active {
     border-bottom: 1px dotted $main-font-color;
 }
 
@@ -126,49 +131,49 @@
 // }
 // 
 // 
-.cards__container:nth-child(3) .img-container {
+.cut-1 .img-container {
 	min-height: 212px;
 	padding-top: 50px;
 }
 
-.cards__container:nth-child(3) img {
+.cut-1 img {
 height: 125px;
 }
 
-.cards__container:nth-child(5) .img-container {
+.сut-2 .img-container {
 	min-height: 212px;
-	padding-top: 50px;
+	padding-top: 0px;
 }
 
-.cards__container:nth-child(5) img {
+.сut-2 img {
 width: 70px;
 height: 212px;
 }
 
-.cards__container:nth-child(7) .img-container {
+.cut-3 .img-container {
 	min-height: 212px;
 }
 
-.cards__container:nth-child(7) img {
+.cut-3 img {
 width: 68%;
 height: 212px;
 }
 
-.cards__container:nth-child(8) .img-container {
+.cut-4 .img-container {
 	min-height: 212px;
 }
 
-.cards__container:nth-child(8) img {
+.cut-4 img {
 width: 68%;
 height: 212px;
 }
 
-.cards__container:nth-child(9) .img-container {
+.cut-5 .img-container {
 	padding-top: 50px;
 	min-height: 212px;
 }
 
-.cards__container:nth-child(9) img {
+.cut-5 img {
 width: 100%;
 height: 125px;
 }
