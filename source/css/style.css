@@ -932,63 +932,6 @@ header
     background-color: #f44;
 }
 
-.cut-1 .img-container
-{
-    min-height: 212px;
-    padding-top: 50px;
-}
-
-.cut-1 img
-{
-    height: 125px;
-}
-
-.сut-2 .img-container
-{
-    min-height: 212px;
-    padding-top: 0;
-}
-
-.сut-2 img
-{
-    width: 70px;
-    height: 212px;
-}
-
-.cut-3 .img-container
-{
-    min-height: 212px;
-}
-
-.cut-3 img
-{
-    width: 68%;
-    height: 212px;
-}
-
-.cut-4 .img-container
-{
-    min-height: 212px;
-}
-
-.cut-4 img
-{
-    width: 68%;
-    height: 212px;
-}
-
-.cut-5 .img-container
-{
-    min-height: 212px; 
-    padding-top: 50px;
-}
-
-.cut-5 img
-{
-    width: 100%;
-    height: 125px;
-}
-
 .cards__container-title
 {
     font-size: 24px;

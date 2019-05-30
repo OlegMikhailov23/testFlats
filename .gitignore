@@ -8,8 +8,5 @@ Thumbs.db
 *.ai
 *.pdf
 *.xml
-build/
 .htaccess
-gulpfile.js
-package-lock.json
-package.json
+
