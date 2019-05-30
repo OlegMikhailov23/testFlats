@@ -1,0 +1,80 @@
+
+$tablet-widths: ("min-width: 720px");
+$desktop-widths: ("min-width: 1200px");
+$lg-widths: ("min-width: 1400px");
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
+
+//bg-features
+
+$body-bg: #faf9ef;
+
+$nav-bg: #002f2f;
+
+$content-bg: #fffefd;
+
+$footer-bg: #046380;
+
+$alert-bg: #ff4444;
+
+$show-btn-bg: #046380;
+
+//font-features
+
+$main-font-color: #002f2f;
+
+$cards-price-font-color: #313639;
+
+$header-color: #002f2f;
+
+$font-color-white: #ffffff;
+
+$main-font-size: 14px;
+
+$main-line-height: 16px;
+
+$btn-hover-color: #000000;
+
+$submit-btn-bg: #ffe13e;
+
+//animation-features
+
+
+@keyframes modal-bounce {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+};
+
+@keyframes main-nav-after-bounce {
+    0% {
+        transform: translateX(-10px);
+    }
+  
+    50% {
+        transform: translateX(10px);
+    }
+  
+    100% {
+        transform: translateX(0px);
+    }
+};
+
+@keyframes main-picture-bounce {
+    0% {
+        transform: translateY(-120px);
+    }
+    
+    50% {
+        transform: translateY(0px);
+    }
+    
+    100% {
+        transform: translateY(0px);
+    }
+};

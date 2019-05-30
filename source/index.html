@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Flats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body-wrapper preload">
+    <header id="header">
+        <div class="header__wrapper">
+            <nav class="main-nav nav--preload main-nav--closed main-nav--nojs">
+                <div class="main-nav__logo">
+                    <a href="" title="Домой"><img src="img/logo.png" alt="Логотип"></a>
+                </div>
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__items">
+                        <li class="main-nav__item  main-nav__item-active"><a>Объекты</a></li>
+                        <li class="main-nav__item"><a class="" href="#">Компания</a></li>
+                        <li class="main-nav__item"><a class="" href="#">Как купить</a>
+                        </li>
+                        <li class="main-nav__item"><a class="" href="#">Агентам</a></li>
+                        <li class="main-nav__item"><a class="main-nav__item-ussual-link" href="#">Регионам</a></li>
+                        <li class="main-nav__item"><a class="main-nav__item-ussual-link" href="#">Акции</a>
+                        </li>
+                        <li class="main-nav__item"><a class="main-nav__item-ussual-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-nav__call">
+                <a href="tel:+7(888)8888888">8 888 88 88 98</a>
+            </div>
+        </div>
+    </header><!-- /header -->
+    <main>
+        <section class="intro">
+            <div class="intro__wrapper">
+                <h1>Найдено 666 квартир</h1>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="cards__wrapper">
+                <div class="cards__bread-crumbs">
+                    <span class="cards__bread-crumbs__title">Сортировать по:</span>
+                    <button type="button" id="sortPrice" class="cards__bread-crumbs__link" onclick="sort()">Цене</button>
+                    <button type="button" id="sortRooms" class="cards__bread-crumbs__link" onclick="sortRoom()">Комнатам</button>
+                </div>
+                <div class="cards__container-wrapper">
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star"></div>
+                            <div class="img-container">
+                                <img src="img/flat-44.png" width="213" height="191" alt="Студия 44">
+                            </div>
+                            <h3 class="cards__container-title">Студия №44</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">без отделки</li>
+                                <li class="cards__container-item-features-item">28 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">12/14 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="1900000" data-room="0">1 900 000 руб.</div>
+                            <div class="cards__container-item-status">
+                                Забронировано
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star cards__container-item-star--empty"></div>
+                            <div class="img-container">
+                                <img src="img/flat-666.png" width="210" height="164" alt="Однокомнатная №666">
+                            </div>
+                            <h3 class="cards__container-title">Однокомнатная №666</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">без отделки</li>
+                                <li class="cards__container-item-features-item">66 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">6/6 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="1666666" data-room="1">1 666 666 руб.</div>
+                            <div class="cards__container-item-status cards__container-item-status--free">
+                                Свободно
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container cut-1">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star"></div>
+                            <div class="img-container">
+                                <img src="img/flat-567.png" width="219" height="83" alt="Двухкомнатная №567">
+                            </div>
+                            <h3 class="cards__container-title">Двухкомнатная №567</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">черновая отделка</li>
+                                <li class="cards__container-item-features-item">65.6 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">7/14 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="5900000" data-room="2">5 900 000 руб.</div>
+                            <div class="cards__container-item-status cards__container-item-status--sold">
+                                Продано
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star cards__container-item-star--empty"></div>
+                            <img src="img/flat-45.png" width="211" height="170" alt="Трехкомнатная №45">
+                            <h3 class="cards__container-title">Трехкомнатная №45</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">без отделки</li>
+                                <li class="cards__container-item-features-item">56 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">1/14 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="12900000" data-room="3">12 900 000 руб.</div>
+                            <div class="cards__container-item-status">
+                                Забронировано
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star"></div>
+                            <div class="cards__container-item-discount">-17%</div>
+                            <div class="cards__container-item-best-price">Шок цена!</div>
+                            <div class="img-container">
+                                <img src="img/flat-25.png" width="75" height="199" alt="Студия  №25">
+                            </div>
+                            <h3 class="cards__container-title">Студия №25</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">черновая отделка</li>
+                                <li class="cards__container-item-features-item">18 м <sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">12/14 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="1900000" data-room="0">1 900 000 руб.</div>
+                            <div class="cards__container-item-status">
+                                Забронировано
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star cards__container-item-star--empty"></div>
+                            <div class="cards__container-item-discount">-6%</div>
+                            <img src="img/flat-259.png" width="216" height="144" alt="Четырехкомнатная №259">
+                            <h3 class="cards__container-title">Четырехкомнатная №259</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">черновая отделка</li>
+                                <li class="cards__container-item-features-item">98 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">14/14 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="23900000" data-room="4">23 900 000 руб.</div>
+                            <div class="cards__container-item-status">
+                                Забронировано
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star cards__container-item-star--empty"></div>
+                            <div class="img-container">
+                                <img src="img/flat-56.png" width="159" height="212" alt="Однокомнатная №56">
+                            </div>
+                            <h3 class="cards__container-title">Однокомнатная №56</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">без отделки</li>
+                                <li class="cards__container-item-features-item">36 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">3/6 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="5666666" data-room="1">5 666 666 руб.</div>
+                            <div class="cards__container-item-status cards__container-item-status--free">
+                                Свободно
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star cards__container-item-star--empty"></div>
+                            <img src="img/flat-46.png" width="159" height="209" alt="Трехкомнтаная №46">
+                            <h3 class="cards__container-title">Трехкомнтаная №46</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">черновая отделка</li>
+                                <li class="cards__container-item-features-item">86 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">1/6 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="5696664" data-room="3">5 696 664 руб.</div>
+                            <div class="cards__container-item-status cards__container-item-status--free">
+                                Свободно
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star cards__container-item-star--empty"></div>
+                            <div class="cards__container-item-discount">-9%</div>
+                            <div class="cards__container-item-best-price">Шок цена!</div>
+                            <div class="img-container">
+                                <img src="img/flat-2.png" width="211" height="95" alt="Однокомнатная №2">
+                            </div>
+                            <h3 class="cards__container-title">Однокомнатная №2</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">черновая отделка</li>
+                                <li class="cards__container-item-features-item">18 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">3/14 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="1200000" data-room="1">1 200 000 руб.</div>
+                            <div class="cards__container-item-status">
+                                Забронировано
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star cards__container-item-star--empty"></div>
+                            <div class="cards__container-item-discount">-6%</div>
+                            <img src="img/flat-12.png" width="209" height="146" alt="Студия №12">
+                            <h3 class="cards__container-title">Студия №12</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">черновая отделка</li>
+                                <li class="cards__container-item-features-item">38 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">6/14 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="1500500" data-room="0">1 500 500 руб.</div>
+                            <div class="cards__container-item-status">
+                                Забронировано
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star cards__container-item-star--empty"></div>
+                            <img src="img/flat-8.png" width="213" height="168" alt="Однокомнатная №8">
+                            <h3 class="cards__container-title">Однокомнатная №8</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">черновая отделка</li>
+                                <li class="cards__container-item-features-item">48 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">3/14 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="6200000" data-room="1">6 200 000 руб.</div>
+                            <div class="cards__container-item-status">
+                                Забронировано
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__container">
+                        <div class="cards__container-item">
+                            <div class="cards__container-item-star cards__container-item-star--empty"></div>
+                            <div class="cards__container-item-discount">-6%</div>
+                            <img src="img/flat-23.png" width="214" height="160" alt="Двухкомнатная №23">
+                            <h3 class="cards__container-title">Двухкомнатная №23</h3>
+                            <ul class="cards__container-item-features-list">
+                                <li class="cards__container-item-features-item">базовая отделка</li>
+                                <li class="cards__container-item-features-item">48 м<sup>2</sup> площадь</li>
+                                <li class="cards__container-item-features-item">3/14 этаж</li>
+                            </ul>
+                            <div class="cards__container-item-price" data-price="5255006" data-room="2">5 255 006 руб.</div>
+                            <div class="cards__container-item-status">
+                                Забронировано
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-cards" id="moreCards"></div>
+                <input type="button" id="showMe" value="Показать еще 20">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer__article">
+                <b>Успей купить!</b>
+                <p>Подпишись и успей словить все акции</p>
+            </div>
+            <form action="#" method="post">
+                <input id="mailField" class="mail-input" type="email" name="mailField" placeholder="E-mail" required>
+                <input class="mail-checkbox" type="checkbox" name="subscribe" id="subscribe" checked required>
+                <label for="subscribe">Подписаться на новости</label>
+                <input class="subscribe__btn" type="submit" id="sendForm" value="Подписаться">
+            </form>
+        </div>
+    </footer>
+    <div class="btnToTop" id="toTop">На верх</div>
+    <script src="libs/libs.min.js" defer></script>
+    <script src="js/minjs.js" defer></script>
+</body>
+
+</html>

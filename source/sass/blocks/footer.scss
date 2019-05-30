@@ -1,0 +1,193 @@
+@import "../variables.scss";
+
+@import "../mixin.scss";
+
+.footer__wrapper {
+	padding: 20px 24px;
+	background-color: $footer-bg;
+	margin-top: 70px;
+	& form {
+		margin-top: 20px;
+	}
+}
+
+.footer__article {
+	text-align: center;
+	& b {
+		@include zero-style();
+		color: $font-color-white;
+		font-family: inherit;
+		font-size: 34px;
+		line-height: 36px;
+		font-weight: 400;
+	}
+
+	& p {
+		@include zero-style();
+		padding-top: 17px;
+		color: $font-color-white;
+		font-family: inherit;
+		font-size: 18px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+}
+
+.mail-input {
+	@include zero-style();
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+	line-height: 20px;
+	color: $footer-bg;
+	background-color: #ffffff;
+	border-radius: 2px;
+	outline: none;
+	border: none;
+}
+
+.mail-input::-webkit-input-placeholder {
+	color: $footer-bg;
+}
+
+.mail-input::-moz-placeholder {
+	color: $footer-bg;
+}
+
+.footer__wrapper input[type="checkbox"] {
+    display: none;
+}
+
+.footer__wrapper input[type="checkbox"] + label {
+	position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 20px;
+    padding-left: 29px;
+    font-size: 18px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer__wrapper input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    top: 20px;
+    left: 0;
+}
+
+.footer__wrapper input[type="checkbox"]:checked + label::after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url("../img/check.png") no-repeat;
+    position: absolute;
+    top: 23px;
+    left: 4px;
+    z-index: 10;
+}
+
+.subscribe__btn {
+	@include btn();
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	background-color: #a7a37e;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #ffffff;
+	border: none;
+	&:hover {
+        background-color: #c9c498;
+        transition: 0.3s;
+        color: $btn-hover-color;
+    }
+
+    &:active {
+        background-color: #c9c498;
+        box-shadow: inset 0px 1px 2px 1px #8f8e8e;
+    }
+}
+
+@media ($tablet-widths) {
+	.mail-input {
+	width: 40%;
+}
+
+.subscribe__btn {
+	width: 40%;
+}
+
+.footer__wrapper input[type="checkbox"] + label {
+	width: 40%;
+}
+}
+
+@media ($desktop-widths) {
+	.footer__wrapper {
+		margin: 0 auto;
+		padding-left: 55px;
+		padding-right: 107px;
+		max-width: 1280px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer__article {
+	text-align: left;
+	}
+
+	.footer__wrapper form {
+		margin-top: 0;
+		display: flex;
+		flex-direction: column;
+		width: 588px;
+		height: 120px;
+		flex-wrap: wrap;
+
+	}
+
+	.mail-input {
+		width: 320px;
+		align-self: flex-start;
+	}
+
+	.footer__wrapper input[type="checkbox"] + label {
+	position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 320px;;
+    padding-top: 20px;
+    padding-left: 29px;
+    font-size: 18px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.subscribe__btn {
+	margin-top: 0; 
+	margin-left: 54px;
+}
+
+}
