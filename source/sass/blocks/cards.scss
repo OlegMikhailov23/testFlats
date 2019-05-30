@@ -44,13 +44,27 @@
         cursor: pointer;
     }
 
+    & button:hover::before {
+       background-color: #d4d8d8;
+       transition: 0.3s;
+    }
+
     & button:nth-child(3)::before {
         transform: rotate(180deg);
     }
 }
 
+.cards__bread-crumbs__link:hover {
+    color: $show-btn-bg;
+    transition: 0.3s;
+}
+
 .cards__bread-crumbs .cards__bread-crumbs__link--active {
     border-bottom: 1px dotted $main-font-color;
+    color: $show-btn-bg;
+    &::before {
+        background-color: #d4d8d8;
+    }
 }
 
 .cards__container-item {

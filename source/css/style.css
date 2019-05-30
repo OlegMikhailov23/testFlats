@@ -186,6 +186,21 @@ img
     height: auto;
 }
 
+.preload
+{
+    -webkit-transition: none !important;
+       -moz-transition: none !important;
+        -ms-transition: none !important;
+         -o-transition: none !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+}
+
+.nav--preload
+{
+    display: none;
+}
+
 @keyframes modal-bounce
 {
     0%
@@ -779,6 +794,14 @@ header
     background-repeat: no-repeat;
     background-position: center;
 }
+.cards__bread-crumbs button:hover::before
+{
+    -webkit-transition: .3s;
+         -o-transition: .3s;
+            transition: .3s; 
+
+    background-color: #d4d8d8;
+}
 .cards__bread-crumbs button:nth-child(3)::before
 {
     -webkit-transform: rotate(180deg);
@@ -786,9 +809,23 @@ header
             transform: rotate(180deg);
 }
 
+.cards__bread-crumbs__link:hover
+{
+    -webkit-transition: .3s;
+         -o-transition: .3s;
+            transition: .3s; 
+
+    color: #046380;
+}
+
 .cards__bread-crumbs .cards__bread-crumbs__link--active
 {
+    color: #046380; 
     border-bottom: 1px dotted #002f2f;
+}
+.cards__bread-crumbs .cards__bread-crumbs__link--active::before
+{
+    background-color: #d4d8d8;
 }
 
 .cards__container-item
@@ -1451,7 +1488,7 @@ header
 .btnToTop
 {
     font-family: inherit;
-    font-size: 0; 
+    font-size: 0;
 
     position: fixed;
     /* отступ кнопки от нижнего края страницы*/
@@ -1480,6 +1517,8 @@ header
     background-position: center;
     -webkit-background-size: 50% 50%;
             background-size: 50%;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
 }
 .btnToTop:hover
 {

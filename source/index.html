@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="body-wrapper">
+<body class="body-wrapper preload">
     <header id="header">
         <div class="header__wrapper">
             <nav class="main-nav nav--preload main-nav--closed main-nav--nojs">
@@ -48,8 +48,8 @@
             <div class="cards__wrapper">
                 <div class="cards__bread-crumbs">
                     <span class="cards__bread-crumbs__title">Сортировать по:</span>
-                    <button type="button" class="cards__bread-crumbs__link cards__bread-crumbs__link--active" onclick="sort()">Цене</button>
-                    <button type="button" class="cards__bread-crumbs__link" onclick="sortRoom()">Комнатам</button>
+                    <button type="button" id="sortPrice" class="cards__bread-crumbs__link" onclick="sort()">Цене</button>
+                    <button type="button" id="sortRooms" class="cards__bread-crumbs__link" onclick="sortRoom()">Комнатам</button>
                 </div>
                 <div class="cards__container-wrapper">
                     <div class="cards__container">
@@ -284,8 +284,8 @@
         </div>
     </footer>
     <div class="btnToTop" id="toTop">На верх</div>
-    <script src="libs/libs.min.js"></script>
-    <script src="js/minjs.js"></script>
+    <script src="libs/libs.min.js" defer></script>
+    <script src="js/minjs.js" defer></script>
 </body>
 
 </html>

@@ -3,27 +3,30 @@
 @import "mixin.scss";
 
 .btnToTop {
-width:40px;
-height: 40px;
-border: none;
-background-color:#a7a37e;
-background-image: url("../img/left-angle-bracket.svg");
-background-position: center;
-background-repeat: no-repeat; 
-transform: rotate(90deg);
-background-size: 50%;
-border-radius: 50%;
-text-align:center;
-padding:5px;
-position:fixed;
-bottom:50%; /* отступ кнопки от нижнего края страницы*/
-right: 6%;
-cursor:pointer;
-display:none;
-color:#333;
-font-family:inherit;
-font-size: 0;
-&:hover {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #a7a37e;
+    background-image: url("../img/left-angle-bracket.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    background-size: 50%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 50%;
+    /* отступ кнопки от нижнего края страницы*/
+    right: 6%;
+    cursor: pointer;
+    display: none;
+    color: #333;
+    font-family: inherit;
+    font-size: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &:hover {
         background-color: #c9c498;
         transition: 0.3s;
         color: $btn-hover-color;
@@ -39,9 +42,9 @@ font-size: 0;
 @media ($desktop-widths) {
 
 
-.btnToTop {
-width:80px;
-height: 80px;
-}
+    .btnToTop {
+        width: 80px;
+        height: 80px;
+    }
 
 }
